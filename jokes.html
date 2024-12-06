@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Joke</title>
+    <style>
+        #jokeButton {
+            padding: 10px 20px;
+            background-color: #9b59b6;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #jokeButton:hover {
+            background-color: #8e44ad;
+        }
+
+        #joke {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <button id="jokeButton" onclick="getJoke()">Get a Joke</button>
+    <p id="joke"></p>
+
+    <script>
+        function getJoke() {
+            const jokes = [
+                "Why don’t skeletons fight each other? They don’t have the guts.",
+                "I told my computer I needed a break, and now it won’t stop sending me Kit-Kats.",
+                "Why don't programmers like nature? It has too many bugs.",
+                "I asked my dog what’s two minus two. He said nothing."
+            ];
+
+            const randomJoke = jokes[Math.floor(Math.random() * jokes.length)];
+            document.getElementById('joke').innerText = randomJoke;
+        }
+    </script>
+
+</body>
+</html>

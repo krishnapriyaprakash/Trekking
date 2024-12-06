@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking Travel Bag Items</title>
+    <link rel="stylesheet" href="samp.css">
+</head>
+<body>
+    <div class="title">Trekking Travel Bag Items</div>
+    <div class="bag-container" id="bagContainer">
+        <!-- Images will be added here using JavaScript -->
+    </div>
+
+    <script>
+        const images = [
+            { src: 'tent1.jpg', alt: 'Tent', title: 'Tent', caption: 'Tent for shelter' },
+            { src: 'bag1.jpg', alt: 'Backpack', title: 'Backpack', caption: 'Essential for carrying items' },
+            { src: 'water.jpg', alt: 'Water Bottle', title: 'Water Bottle', caption: 'Stay hydrated' },
+            { src: 'aid.jpg', alt: 'First Aid Kit', title: 'First Aid Kit', caption: 'For emergency medical help' },
+            { src: 'sleepingbag.jpg', alt: 'Sleeping Bag', title: 'Sleeping Bag', caption: 'Comfortable sleep during trekking' },
+            { src: 'flash.jpg', alt: 'Flashlight', title: 'Flashlight', caption: 'For visibility at night' }
+        ];
+
+        const container = document.getElementById('bagContainer');
+
+        // Function to create image items and append to the container
+        function addBagItems() {
+            images.forEach(item => {
+                const div = document.createElement('div');
+                div.classList.add('bag-item');
+
+                const title = document.createElement('div');
+                title.classList.add('item-title');
+                title.textContent = item.title;
+
+                const img = document.createElement('img');
+                img.src = item.src;
+                img.alt = item.alt;
+
+                const caption = document.createElement('p');
+                caption.classList.add('caption');
+                caption.textContent = item.caption;
+
+                div.appendChild(title);  // Adding the title above the image
+                div.appendChild(img);
+                div.appendChild(caption);
+                container.appendChild(div);
+            });
+        }
+
+        // Add the items to the bag container
+        addBagItems();
+    </script>
+</body>
+</html>

@@ -1,0 +1,248 @@
+/* Header Styles */
+.header {
+    background-image: url('web/q36.jpg'); /* Background image applied to the header */
+    background-size: cover; /* Ensures the image covers the entire header */
+    background-position: center; /* Centers the background image */
+    background-position: top;
+    color: white; /* Text color */
+    height: 100px; /* Height for the header */
+    display: flex; /* Flexbox for positioning */
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center content */
+    padding: 20px 30px; /* Padding around the header content */
+}
+
+/* Styling for the Logo */
+.img-fluid {
+    margin-right: 15px; /* Spacing between the logo and the company name */
+}
+
+/* Styling for the Company Name */
+.sp {
+    color: white; /* Text color for the company name */
+    font-size: 18px; /* Font size for the company name */
+    line-height: 1.2; /* Space between the lines of the company name */
+}
+
+/* Styling for Navigation */
+.nav {
+    margin-top: 0; /* Remove extra margin from the top */
+}
+
+/* Styling for Navigation Items */
+.nav-item {
+    margin-left: 20px; /* Spacing between menu items */
+}
+
+/* Styling for the Dropdown */
+.nav-link {
+    color: white; /* Text color for the dropdown links */
+}
+
+.nav-link:hover {
+    color: #ddd; /* Light color on hover for better visibility */
+}
+
+.dropdown-menu {
+    background-color: #333; /* Dark background for the dropdown */
+}
+
+.dropdown-item {
+    color: white; /* Text color for the dropdown items */
+}
+
+.dropdown-item:hover {
+    background-color: #555; /* Darker background when hovering over items */
+}
+
+/* Section Styles */
+.one {
+    height: 400px; /* Adjust the height as needed */
+    background-image: url('web/q36.jpg'); /* Same background image applied to section */
+    background-size: cover;
+    background-position: center;
+}
+
+h1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding-top: 30px;
+
+}
+.card1
+{
+    
+        height: 151px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.card1-img-top {
+    transition: transform 0.3s ease;
+}
+
+/* Scale the image on hover */
+.card1:hover .card-img-top {
+    transform: scale(1.1); /* Scale image to 110% */
+}
+
+/* Optional: Add a smooth transition effect */
+.card1-body {
+    transition: opacity 0.3s ease; /* Optional to smooth out the transition */
+}
+
+/* Optional: Darken the text area on hover */
+.card1:hover .card-body {
+    opacity: 0.8; /* Fade out the text area slightly */
+}
+
+.row {
+    margin-bottom: 50px;
+}
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    
+}
+
+/* Overlay styling */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Transparent black overlay */
+    display: flex;
+    justify-content: center;
+    padding-top: 150px;
+    color: white;
+    font-size: 20px;
+    opacity: 1; /* Always visible */
+    transition: opacity 0.3s ease-in-out; /* Optional: for smooth transition */
+    
+}
+
+.image1-container {
+    position: relative;
+    width: 100%; /* Keep the container responsive */
+    max-width: 944px; /* Optional: to limit the width of the image */
+    margin: 0 auto; /* Center the image */
+}
+
+.img1-fluid {
+    width: 100%; /* Keep the image responsive */
+    height: 400px; /* Set the fixed height (adjust as needed) */
+    object-fit: cover; /* Ensures the image covers the space without distortion */
+}
+
+.ab{
+    padding: 20px;
+}
+.overlay-text {
+    text-align: center;
+    margin-top: -125px;
+}
+.grid {
+    position: absolute;
+    bottom: 56px; /* Position the grid near the bottom of the image */
+    left: 50%;
+    transform: translateX(-50%); /* Center the grid horizontally */
+    display: flex;
+    justify-content: space-between;
+    width: 90%; /* Optional: Adjust grid width */
+    
+}
+
+/* Optional: Style for each column inside the grid */
+.grid .col-sm-3 {
+    text-align: center;
+    color: white;
+    margin: 10px 0;
+}
+
+/* Optional: Adjust the size of SVG icons */
+.grid svg {
+    width: 40px;
+    height: 40px;
+}
+.card {
+    height: 300px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .card-img-top {
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+
+/* Scale the image on hover */
+.card:hover .card-img-top {
+    transform: scale(1.1); /* Scale image to 110% */
+}
+
+/* Optional: Add a smooth transition effect */
+.card-body {
+    transition: opacity 0.3s ease; /* Optional to smooth out the transition */
+}
+
+/* Optional: Darken the text area on hover */
+.card:hover .card-body {
+    opacity: 0.8; /* Fade out the text area slightly */
+}
+  footer
+  {
+    margin-top: -2px;
+    bottom: 30px;
+  }
+  /*social media button */
+  .fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+  
+  .fa:hover {
+      opacity: 0.7;
+  }
+  
+  .fa-facebook {
+
+    color: white;
+  }
+  .fa-twitter {
+  color: white;
+  }
+  .fa-youtube {
+  
+    color: white;
+  }
+  
+  .fa-instagram {
+  
+    color: white;
+  }
+  .btn {
+    border: none;
+    background-color: inherit;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-block;
+    color: white;
+  }
+  .btn:hover {background: #eee;}
+

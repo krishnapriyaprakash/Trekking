@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Button Text</title>
+    <style>
+        #changeTextButton {
+            padding: 10px 20px;
+            background-color: #0272f1;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+
+        #changeTextButton:hover {
+            background-color: #0c54f0;
+        }
+        .ab
+        {
+            text-align: center;
+            margin-top: 100PX;
+            
+        }
+        body{
+            background-image: url("10.jpg");
+            background-size: cover;
+        }
+    </style>
+</head>
+<body>
+   <div class="ab"> 
+    <button id="changeTextButton" onclick="changeButtonText()">Click Me</button>
+</div>
+    <script>
+        function changeButtonText() {
+            const button = document.getElementById('changeTextButton');
+            button.textContent = "You Clicked Me!";
+        }
+    </script>
+
+</body>
+</html>

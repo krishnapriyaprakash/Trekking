@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Font Size</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 50px;
+            background-color: #9f6bc9;
+        }
+
+        #fontSizeButton {
+            padding: 10px 20px;
+            background-color: #9f6bc9;
+            color: rgb(8, 8, 8);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #fontSizeButton:hover {
+            background-color: #713096;
+        }
+
+        #text {
+            font-size: 20px;
+          
+        }
+        h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <h1 id="text">Click the button to change my font size!</h1>
+    <button id="fontSizeButton" onclick="changeFontSize()">Change Font Size</button>
+
+    <script>
+        let currentSize = 20;
+
+        function changeFontSize() {
+            currentSize += 5;
+            document.getElementById('text').style.fontSize = currentSize + 'px';
+        }
+    </script>
+
+</body>
+</html>

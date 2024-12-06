@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Show or Hide Paragraph</title>
+    <style>
+        #toggleParagraphButton {
+            padding: 10px 20px;
+            background-color: #440a04;
+            color: white;
+            border:#6d0f05;
+            cursor: pointer;
+            font-size: 16px;
+            
+        }
+
+        #toggleParagraphButton:hover {
+            background-color: #6b1208;
+        }
+
+        #paragraph {
+            display: none;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+        body{
+            background-color: #440a04;
+        }
+        p{
+            color: aliceblue;
+            text-align: center;
+            padding-top: 100px;
+        }
+        div{
+            text-align: center;
+            padding-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div><button id="toggleParagraphButton" onclick="toggleParagraph()">
+        Show/Hide Paragraph</button></div>
+    <p id="paragraph">This is a hidden paragraph. Click the button to toggle its visibility.</p>
+
+    <script>
+        function toggleParagraph() {
+            const paragraph = document.getElementById('paragraph');
+            if (paragraph.style.display === 'none') {
+                paragraph.style.display = 'block';
+            } else {
+                paragraph.style.display = 'none';
+            }
+        }
+    </script>
+
+</body>
+</html>

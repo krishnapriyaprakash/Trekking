@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-image: url('4.jpg');
+            background-size: cover;
+        }
+
+        #colorButton {
+            padding: 10px 20px;
+            background-color: #0d6e9b;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 50px;
+
+        }
+
+        #colorButton:hover {
+            background-color: #70b4c9;
+            
+        }
+        .ab{
+            padding-top: 484px;
+        
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="text">Click the button to change my color!</h1>
+    <div class="ab">
+    <button id="colorButton" onclick="changeTextColor()">Change Text Color</button>
+    </div>
+    <script>
+        const colors = ['teal', 'blue', 'indigo','aqua','Fuchsia'];
+        let currentIndex = 0;
+
+        function changeTextColor() {
+            currentIndex = (currentIndex + 1) % colors.length;
+            document.getElementById('text').style.color = colors[currentIndex];
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Current Date and Time</title>
+    <style>
+        #dateButton {
+            padding: 10px 20px;
+            background-color: #383829;
+            color: rgb(229, 240, 238);
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #dateButton:hover {
+            background-color:#383829;
+        }
+
+        #datetime {
+            margin-top: 20px;
+            font-size: 18px;
+            color:rgb(13, 14, 13);
+        }
+        body{
+            text-align: center;
+            padding-top: 100px;
+            background-image: url('12.jpg');
+            background-size: cover;
+        }
+        button{
+            border-radius: 30px;
+        }
+
+    </style>
+</head>
+<body>
+    <button id="dateButton" onclick="showDateTime()">
+        Show Current Date and Time</button>
+    <p id="datetime"></p>
+
+    <script>
+        function showDateTime() {
+            const currentDate = new Date();
+            const dateTimeString = currentDate.toLocaleString();
+            document.getElementById('datetime').innerText = dateTimeString;
+        }
+    </script>
+
+</body>
+</html>

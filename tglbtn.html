@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toggle Light/Dark Mode</title>
+    <style>
+        body {
+            transition: background-color 0.3s, color 0.3s;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        body.dark-mode {
+            background-color: black;
+            color: rgb(240, 235, 231);
+        }
+
+        /* Styling for the image button */
+        #modeButton {
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s; /* Smooth scaling effect */
+        }
+
+        #modeButton:hover {
+            transform: scale(1.1); /* Slightly enlarge image on hover */
+        }
+
+        #modeButton:active {
+            transform: scale(1); /* Reset size when clicked */
+        }
+
+        /* Center the image within the div */
+        .cd {
+            padding: 20px;
+            text-align: center;
+            padding-top: 250px;
+        }
+
+        /* Optional responsive style for small screens */
+        
+    </style>
+</head>
+<body class="light-mode">
+    <div class="cd">
+        <!-- Image used as button to toggle dark mode -->
+        <img src="6.jpg" id="modeButton" alt="Toggle Dark Mode" width="180px" height="150px" onclick="toggleMode()">
+    </div>
+
+    <script>
+        function toggleMode() {
+            // Toggle between light and dark mode classes on the <body>
+            document.body.classList.toggle('dark-mode');
+            document.body.classList.toggle('light-mode');
+        }
+    </script>
+</body>
+</html>

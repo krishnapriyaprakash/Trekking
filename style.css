@@ -1,0 +1,66 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+body.light-mode {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: rgb(240, 235, 231);
+}
+
+/* Styling for the image button */
+#modeButton {
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s; /* Smooth scaling effect */
+}
+
+#modeButton:hover {
+    transform: scale(1.1); /* Slightly enlarge image on hover */
+}
+
+#modeButton:active {
+    transform: scale(1); /* Reset size when clicked */
+}
+
+/* Center the image within the div */
+.cd {
+    padding: 20px;
+    text-align: center;
+    padding-top: 250px;
+}
+
+/* Optional responsive style for small screens */
+p{
+    color: aliceblue;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+#colorButton {
+    padding: 10px 20px;
+    background-color: #0d6e9b;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 50px;
+
+}
+
+#colorButton:hover {
+    background-color: #70b4c9;
+    
+}
+.ab{
+    text-align: center;
+
+}
